@@ -13,7 +13,7 @@
     <a href="mailto:facundopeletay46@gmail.com">
       <img src="https://img.shields.io/badge/Contacto-Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
-    <a href="https://github.com/facupeletay?tab=repositories">
+    <a href="https://github.com/facupeletay?tab=followers">
       <img src="https://img.shields.io/github/followers/facupeletay?label=Seguidores&style=for-the-badge&logo=github&color=181717" alt="Followers" />
     </a>
   </p>
@@ -46,16 +46,23 @@ Soy **Analista de Sistemas** con un perfil versátil que une el mundo del **desa
   <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
 </p>
 
-#### Frontend, Mobile & UI
+#### Frontend, Mobile & Desktop
 <p align="left">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/Electron-47848F?style=for-the-badge&logo=electron&logoColor=white" alt="Electron" />
 </p>
 
-#### Ingeniería de Sistemas, Datos & QA
+#### Backend, Datos & DevOps
 <p align="left">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/An%C3%A1lisis_de_Sistemas-0F172A?style=for-the-badge&logo=diagramsdotnet&logoColor=38BDF8" alt="Análisis de Sistemas" />
   <img src="https://img.shields.io/badge/QA_%26_Testing-16A34A?style=for-the-badge&logo=checkmarx&logoColor=white" alt="QA & Testing" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
@@ -76,7 +83,7 @@ Soy **Analista de Sistemas** con un perfil versátil que une el mundo del **desa
 ### 📊 Estadísticas y Actividad
 
 <div align="center">
-  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=facupeletay&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true" alt="Estadísticas de GitHub" />
+  <img height="175em" src="https://github-readme-stats.vercel.app/api?username=facupeletay&show_icons=true&theme=tokyonight&include_all_commits=true&hide_border=true" alt="Estadísticas de GitHub" />
   <img height="175em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=facupeletay&layout=compact&langs_count=8&theme=tokyonight&hide_border=true" alt="Lenguajes más usados" />
 </div>
 
@@ -89,7 +96,6 @@ Soy **Analista de Sistemas** con un perfil versátil que une el mundo del **desa
 ### ⚡ Estado Dinámico del Perfil (Auto-actualizado)
 
 <!-- START_DYNAMIC_ACTIVITY -->
-- 🕒 **Última actualización automática:** `17/10/2026 14:20 (ART / Buenos Aires)`
 - 📦 **Repositorios públicos activos:** `2` ([`front_goodFood`](https://github.com/facupeletay/front_goodFood), [`back_goodFood`](https://github.com/facupeletay/back_goodFood))
 - 🎯 **Enfoque actual:** Análisis de Sistemas • Desarrollo en Pascal & SQL • Full Stack (React/TS/Python/Java) & Flutter • QA Testing
 

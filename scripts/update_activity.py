@@ -6,6 +6,7 @@ from __future__ import annotations
 import datetime
 import json
 import pathlib
+import re
 import urllib.request
 
 USERNAME = "facupeletay"
@@ -26,7 +27,7 @@ TIPS_SISTEMAS_QA = [
 ]
 
 
-def fetch_github_summary(username: str) -> tuple[int, list[str]]:
+def fetch_github_summary(username: str) -> tuple[int, list[str]] | None:
     url = f"https://api.github.com/users/{username}/repos?per_page=100&sort=updated"
     req = urllib.request.Request(
         url,
@@ -38,25 +39,32 @@ def fetch_github_summary(username: str) -> tuple[int, list[str]]:
             own = [r for r in repos if not r.get("fork") and r["name"].lower() not in EXCLUDED_REPOS]
             recent = [f"[`{r['name']}`]({r['html_url']})" for r in own[:4]]
             return len(own), recent
-    except Exception:
-        return 0, []
+    except Exception as exc:
+        print(f"No se pudo consultar la API de GitHub: {exc}")
+        return None
 
 
-def build_dynamic_block() -> str:
+def build_dynamic_block(previous_block: str) -> str:
+    # Sin fecha/hora en el bloque: así solo hay commit cuando cambia el contenido real.
     now_ar = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-3)))
     day_index = now_ar.timetuple().tm_yday % len(TIPS_SISTEMAS_QA)
     tip = TIPS_SISTEMAS_QA[day_index]
-    repo_count, recent_repos = fetch_github_summary(USERNAME)
+    summary = fetch_github_summary(USERNAME)
 
-    repos_line = (
-        f"- 📦 **Repositorios públicos activos:** `{repo_count}` ({', '.join(recent_repos)})\n"
-        if recent_repos
-        else ""
-    )
+    if summary is None:
+        # Si la API falla, se conserva la línea de repos anterior en vez de borrarla.
+        prev = re.search(r"^- 📦 .*\n", previous_block, re.MULTILINE)
+        repos_line = prev.group(0) if prev else ""
+    else:
+        repo_count, recent_repos = summary
+        repos_line = (
+            f"- 📦 **Repositorios públicos activos:** `{repo_count}` ({', '.join(recent_repos)})\n"
+            if recent_repos
+            else ""
+        )
 
     return (
         f"{START_MARKER}\n"
-        f"- 🕒 **Última actualización automática:** `{now_ar.strftime('%d/%m/%Y %H:%M')} (ART / Buenos Aires)`\n"
         f"{repos_line}"
         f"- 🎯 **Enfoque actual:** Análisis de Sistemas • Desarrollo en Pascal & SQL • Full Stack (React/TS/Python/Java) & Flutter • QA Testing\n\n"
         f"> {tip}\n"
@@ -70,8 +78,8 @@ def main() -> None:
         raise RuntimeError("No se encontraron los marcadores dinámicos en README.md")
 
     before, rest = content.split(START_MARKER, 1)
-    _, after = rest.split(END_MARKER, 1)
-    updated = before + build_dynamic_block() + after
+    previous, after = rest.split(END_MARKER, 1)
+    updated = before + build_dynamic_block(previous) + after
     README_PATH.write_text(updated, encoding="utf-8")
     print("README.md actualizado correctamente.")
 

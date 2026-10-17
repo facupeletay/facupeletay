@@ -29,8 +29,9 @@ jobs:
 
       - name: Hacer commit de la actualización en main
         run: |
-          git config user.name "Facundo Peletay"
-          git config user.email "facundopeletay46@gmail.com"
+          # Identidad del bot: estos commits no cuentan como contribuciones propias
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
           git diff --staged --quiet || git commit -m "chore(profile): actualizar estado dinámico del README"
           git push
