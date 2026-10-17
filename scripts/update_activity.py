@@ -12,6 +12,8 @@ USERNAME = "facupeletay"
 README_PATH = pathlib.Path(__file__).resolve().parent.parent / "README.md"
 START_MARKER = "<!-- START_DYNAMIC_ACTIVITY -->"
 END_MARKER = "<!-- END_DYNAMIC_ACTIVITY -->"
+# Repos que nunca se listan: el propio perfil y proyectos de trabajo.
+EXCLUDED_REPOS = {USERNAME.lower(), "agentecreditos"}
 
 TIPS_SISTEMAS_QA = [
     "💡 **Principio QA del día:** Probar temprano (*Shift-Left Testing*) reduce exponencialmente el costo de corregir defectos en producción.",
@@ -33,12 +35,9 @@ def fetch_github_summary(username: str) -> tuple[int, list[str]]:
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
             repos = json.loads(resp.read().decode("utf-8"))
-            recent = [
-                f"[`{r['name']}`]({r['html_url']})"
-                for r in repos[:4]
-                if not r.get("fork")
-            ]
-            return len(repos), recent
+            own = [r for r in repos if not r.get("fork") and r["name"].lower() not in EXCLUDED_REPOS]
+            recent = [f"[`{r['name']}`]({r['html_url']})" for r in own[:4]]
+            return len(own), recent
     except Exception:
         return 0, []
 
