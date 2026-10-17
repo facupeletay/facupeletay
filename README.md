@@ -90,7 +90,8 @@ Soy **Analista de Sistemas** con un perfil versátil que une el mundo del **desa
 ### ⚡ Estado Dinámico del Perfil (Auto-actualizado)
 
 <!-- START_DYNAMIC_ACTIVITY -->
-- 🕒 **Última actualización automática:** `17/10/2026 02:44 (ART / Buenos Aires)`
+- 🕒 **Última actualización automática:** `17/10/2026 11:44 (ART / Buenos Aires)`
+- 📦 **Repositorios públicos activos:** `4` ([`facupeletay`](https://github.com/facupeletay/facupeletay), [`AgenteCreditos`](https://github.com/facupeletay/AgenteCreditos), [`front_goodFood`](https://github.com/facupeletay/front_goodFood), [`back_goodFood`](https://github.com/facupeletay/back_goodFood))
 - 🎯 **Enfoque actual:** Análisis de Sistemas • Desarrollo en Pascal & SQL • Full Stack (React/TS/Python/Java) & Flutter • QA Testing
 
 > 💡 **Tip Pascal / Clean Code:** Mantener rutinas cohesivas y desacoplar la lógica de negocio del acceso a datos facilita el mantenimiento evolutivo.
