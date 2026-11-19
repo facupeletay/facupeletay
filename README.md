@@ -99,7 +99,7 @@ Soy **Analista de Sistemas** con un perfil versátil que une el mundo del **desa
 - 📦 **Repositorios públicos activos:** `3` ([`qa-api-monitor`](https://github.com/facupeletay/qa-api-monitor), [`front_goodFood`](https://github.com/facupeletay/front_goodFood), [`back_goodFood`](https://github.com/facupeletay/back_goodFood))
 - 🎯 **Enfoque actual:** Análisis de Sistemas • Desarrollo en Pascal & SQL • Full Stack (React/TS/Python/Java) & Flutter • QA Testing
 
-> 💡 **Principio QA del día:** Probar temprano (*Shift-Left Testing*) reduce exponencialmente el costo de corregir defectos en producción.
+> 💡 **Tip SQL del día:** Revisá siempre los planes de ejecución (`EXPLAIN ANALYZE`) antes de agregar índices compuestos innecesarios.
 <!-- END_DYNAMIC_ACTIVITY -->
 
 ---
