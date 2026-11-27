@@ -99,7 +99,7 @@ Soy **Analista de Sistemas** con un perfil versátil que une el mundo del **desa
 - 📦 **Repositorios públicos activos:** `5` ([`hybrid-nids-ml`](https://github.com/facupeletay/hybrid-nids-ml), [`nasa-turbofan-rul`](https://github.com/facupeletay/nasa-turbofan-rul), [`qa-api-monitor`](https://github.com/facupeletay/qa-api-monitor), [`front_goodFood`](https://github.com/facupeletay/front_goodFood))
 - 🎯 **Enfoque actual:** Análisis de Sistemas • Desarrollo en Pascal & SQL • Full Stack (React/TS/Python/Java) & Flutter • QA Testing
 
-> 💡 **Tip SQL del día:** Revisá siempre los planes de ejecución (`EXPLAIN ANALYZE`) antes de agregar índices compuestos innecesarios.
+> 💡 **Ingeniería de Sistemas:** Un requerimiento bien documentado y con criterios de aceptación claros ahorra horas de retrabajo.
 <!-- END_DYNAMIC_ACTIVITY -->
 
 ---
