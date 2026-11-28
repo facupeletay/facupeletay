@@ -96,10 +96,10 @@ Soy **Analista de Sistemas** con un perfil versátil que une el mundo del **desa
 ### ⚡ Estado Dinámico del Perfil (Auto-actualizado)
 
 <!-- START_DYNAMIC_ACTIVITY -->
-- 📦 **Repositorios públicos activos:** `5` ([`hybrid-nids-ml`](https://github.com/facupeletay/hybrid-nids-ml), [`nasa-turbofan-rul`](https://github.com/facupeletay/nasa-turbofan-rul), [`qa-api-monitor`](https://github.com/facupeletay/qa-api-monitor), [`front_goodFood`](https://github.com/facupeletay/front_goodFood))
+- 📦 **Repositorios públicos activos:** `6` ([`liquid-terminal`](https://github.com/facupeletay/liquid-terminal), [`hybrid-nids-ml`](https://github.com/facupeletay/hybrid-nids-ml), [`nasa-turbofan-rul`](https://github.com/facupeletay/nasa-turbofan-rul), [`qa-api-monitor`](https://github.com/facupeletay/qa-api-monitor))
 - 🎯 **Enfoque actual:** Análisis de Sistemas • Desarrollo en Pascal & SQL • Full Stack (React/TS/Python/Java) & Flutter • QA Testing
 
-> 💡 **Ingeniería de Sistemas:** Un requerimiento bien documentado y con criterios de aceptación claros ahorra horas de retrabajo.
+> 💡 **Tip Pascal / Clean Code:** Mantener rutinas cohesivas y desacoplar la lógica de negocio del acceso a datos facilita el mantenimiento evolutivo.
 <!-- END_DYNAMIC_ACTIVITY -->
 
 ---
